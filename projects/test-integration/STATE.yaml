@@ -1,0 +1,27 @@
+project: test-integration
+version: 1
+created: '2026-02-20T02:07:28Z'
+updated: '2026-02-20T02:07:36Z'
+owner: pm-test-integration
+status: active
+description: Live integration test of STATE.yaml pattern
+tasks:
+- id: task-alpha
+  title: Research task A
+  status: done
+  owner: pm-test-alpha
+  priority: high
+  created: '2026-02-20T02:07:28Z'
+  started: '2026-02-20T02:07:36Z'
+  notes: Research complete, output in /tmp/research.md
+  completed: '2026-02-20T02:07:36Z'
+- id: task-beta
+  title: Build task B (depends on A)
+  status: pending
+  owner: pm-test-beta
+  priority: medium
+  created: '2026-02-20T02:07:28Z'
+next_actions:
+- owner: pm-test-beta
+  action: 'Unblocked: Build task B (depends on A)'
+  unblocked_by: task-alpha

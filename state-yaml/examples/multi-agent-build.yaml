@@ -1,0 +1,49 @@
+project: command-center
+version: 1
+created: "2026-02-20T02:00:00Z"
+updated: "2026-02-20T02:00:00Z"
+owner: pm-command-center
+status: active
+description: "Build the agent operations Command Center — Canvas-based dashboard"
+
+tasks:
+  - id: canvas-scaffold
+    title: "Scaffold React app in Canvas directory"
+    status: done
+    owner: pm-command-center-frontend
+    priority: high
+    created: "2026-02-20T02:00:00Z"
+    completed: "2026-02-20T02:15:00Z"
+    output: "~/clawd/canvas/command-center/"
+
+  - id: gateway-ws-client
+    title: "Build WebSocket client for Gateway RPC"
+    status: in_progress
+    owner: pm-command-center-frontend
+    priority: high
+    created: "2026-02-20T02:00:00Z"
+    started: "2026-02-20T02:16:00Z"
+    notes: "Connecting to sessions.list, cron.*, status endpoints"
+
+  - id: sqlite-metrics
+    title: "Set up SQLite for historical metrics storage"
+    status: in_progress
+    owner: pm-command-center-backend
+    priority: medium
+    created: "2026-02-20T02:00:00Z"
+    started: "2026-02-20T02:10:00Z"
+    notes: "Schema: metrics(timestamp, source, key, value)"
+
+  - id: state-viewer
+    title: "Dashboard panel showing all STATE.yaml files"
+    status: pending
+    owner: pm-command-center-frontend
+    priority: medium
+    created: "2026-02-20T02:00:00Z"
+    blocked_by: gateway-ws-client
+
+next_actions:
+  - owner: pm-command-center-frontend
+    action: "Finish WS client, then build state viewer panel"
+  - owner: pm-command-center-backend
+    action: "Expose metrics via simple HTTP endpoint for frontend"
