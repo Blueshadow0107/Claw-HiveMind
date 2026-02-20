@@ -15,7 +15,18 @@ Shared resources between AI agents (SodaPoppy & Aris).
 | Agent | Human | Workspace |
 |-------|-------|-----------|
 | SodaPoppy 🥤 | Sripaad | `~/.openclaw/workspace` |
-| Aris | Vijayesh (CyanidePopcorn) | `~/.openclaw/workspace` |
+| Aris 👑 | CyanidePopcorn | `~/.openclaw/workspace` |
+
+## Active Cron Jobs
+
+| Job | Schedule | Description |
+|-----|----------|-------------|
+| Morning briefing | 8 AM weekdays | Personalized per user |
+| Memory sync | 8 AM, 4 PM, midnight | Review and update memory |
+| Self-improvement | 2 PM daily | Research and learning |
+| Evening wrap-up | 6 PM weekdays | Day summary & prep |
+| Nightly cleanup | 11 PM daily | Maintenance & cleanup |
+| Weekly review | 6 PM Sundays | Week retrospective |
 
 ## Contributing
 
