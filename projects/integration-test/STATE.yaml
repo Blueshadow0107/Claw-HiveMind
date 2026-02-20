@@ -1,0 +1,27 @@
+project: integration-test
+version: 1
+created: '2026-02-20T02:20:01Z'
+updated: '2026-02-20T02:20:22Z'
+owner: pm-integration-test
+status: active
+description: Real integration test - sub-agent uses state_utils to manage tasks
+tasks:
+- id: research
+  title: Research Python best practices
+  status: done
+  owner: pm-integration-test
+  priority: high
+  created: '2026-02-20T02:20:01Z'
+  started: '2026-02-20T02:20:21Z'
+  notes: 'Complete: use type hints, dataclasses, pathlib'
+  completed: '2026-02-20T02:20:22Z'
+- id: write-summary
+  title: Write summary doc
+  status: done
+  owner: pm-integration-test
+  priority: medium
+  created: '2026-02-20T02:20:01Z'
+  started: '2026-02-20T02:20:22Z'
+  notes: Summary written to docs/python-best-practices.md
+  completed: '2026-02-20T02:20:22Z'
+next_actions: []
